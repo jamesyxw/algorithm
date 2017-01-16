@@ -1,11 +1,6 @@
 import java.util.*;
 
 public class QuickSort {
-    
-    private QuickSort(){
-
-    }
-
     public static void sort(Comparable[] a){
         sort(a, 0, a.length - 1);
     }
@@ -56,30 +51,6 @@ public class QuickSort {
         Object temp = a[i];
         a[i] = a[j];
         a[j] = temp;
-    }
-
-    public static void display(Comparable[] a){
-        for(int i = 0; i < a.length; i++){
-            System.out.print(a[i] + " ");
-        }
-        System.out.println();
-    }
-
-    public static void main(String[] args){
-        Integer[] a = new Integer[10];
-
-        Random random = new Random();
-
-        for(int i = 0; i < 10; i++){
-            a[i] = random.nextInt(20);
-        }
-
-        QuickSort.display(a);
-
-        QuickSort.sort(a);
-
-        QuickSort.display(a);
-
     }
 }
 
