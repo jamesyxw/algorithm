@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class QuickSort{
+public class QuickSort {
     
     private QuickSort(){
 
@@ -38,7 +38,9 @@ public class QuickSort{
                 if(j == low) break;
             }
 
-            if(i >= j) break;
+            if(i >= j) {
+                break;
+            }
 
             swap(a, i, j);
         }
@@ -60,6 +62,7 @@ public class QuickSort{
         for(int i = 0; i < a.length; i++){
             System.out.print(a[i] + " ");
         }
+        System.out.println();
     }
 
     public static void main(String[] args){
@@ -70,6 +73,8 @@ public class QuickSort{
         for(int i = 0; i < 10; i++){
             a[i] = random.nextInt(20);
         }
+
+        QuickSort.display(a);
 
         QuickSort.sort(a);
 
