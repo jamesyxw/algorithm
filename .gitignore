@@ -1,4 +1,5 @@
 !*.javac
 */*.class
 */*/*.class
+.vscode
 
