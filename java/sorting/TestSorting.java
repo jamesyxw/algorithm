@@ -20,6 +20,11 @@ public class TestSorting {
         display(mergeCopy);
         System.out.println(validate(mergeCopy));
 
+        Comparable[] heapSortCopy = test.clone();
+        HeapSort.sort(heapSortCopy);
+        display(heapSortCopy);
+        System.out.println(validate(heapSortCopy));
+
     }
 
     public static void display(Comparable[] a){
