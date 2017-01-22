@@ -4,4 +4,9 @@ public class Utils {
         a[i] = a[j];
         a[j] = temp;
     }
+
+    public static boolean less(Comparable a, Comparable b){
+        return a.compareTo(b) < 0;
+    }
+
 }
