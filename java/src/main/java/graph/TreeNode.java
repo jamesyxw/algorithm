@@ -1,7 +1,9 @@
+package graph;
+
 public class TreeNode {
-    TreeNode left;
-    TreeNode right;
-    Comparable value;
+	public TreeNode left;
+    public TreeNode right;
+    public Comparable value;
 
     public TreeNode (Comparable value){
         this.value = value;
@@ -17,6 +19,10 @@ public class TreeNode {
 
     public boolean isLeaf() {
         return left == null && right == null;
+    }
+    
+    public Comparable getValue() {
+    	return this.value;
     }
 
 }

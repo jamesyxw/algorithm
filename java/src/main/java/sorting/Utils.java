@@ -1,3 +1,5 @@
+package sorting;
+
 public class Utils {
     public static void swap (Comparable[] a, int i, int j) {
         Comparable temp = a[i];

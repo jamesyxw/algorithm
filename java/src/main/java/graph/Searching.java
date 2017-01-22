@@ -1,4 +1,6 @@
-import java.util.Queue;
+package graph;
+
+import java.util.*;
 
 public class Searching {
     public static List<Node> BFS (Node root) {

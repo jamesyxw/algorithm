@@ -1,3 +1,5 @@
+package sorting;
+
 public class HeapSort {
     public static void sort(Comparable[] a) {
         int N = a.length;

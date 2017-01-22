@@ -1,3 +1,7 @@
+package graph;
+
+import java.util.*;
+
 public class BST {
     TreeNode root;
 
@@ -30,7 +34,7 @@ public class BST {
                     return;
                 } else {
                     //move the current node pointer to its left child
-                    current = current.left;
+                    currentNode = currentNode.left;
                 }
             } else {
                 //new node's value is smaller than the current node's value
@@ -40,7 +44,7 @@ public class BST {
                     return;
                 } else {
                     //move the current node pointer to its left child
-                    current = current.right;
+                    currentNode = currentNode.right;
                 }
             }
         }
@@ -54,7 +58,7 @@ public class BST {
         TreeNode currentNode = root;
 
         while (currentNode != null) {
-            if (Utils.less(value, currentNode.value)) {
+            if (value.compareTo(currentNode.value) < 0) {
                 currentNode = currentNode.left;
             } else {
                 currentNode = currentNode.right;
@@ -113,14 +117,14 @@ public class BST {
             if (curNode != null) {
                 stack.push(curNode);
                 curNode = curNode.left;
+            } else {
+            	//Finally curNode hit the leaf node
+                //So pop the last node in the stack and add to the List
+                //Go the right node of the last popped node
+                curNode = stack.pop();
+                result.add(curNode);
+                curNode = curNode.right;
             }
-
-            //Finally curNode hit the leaf node
-            //So pop the last node in the stack and add to the List
-            //Go the right node of the last popped node
-            curNode = stack.pop();
-            result.add(curNode);
-            curNode = curNode.right;
         }
         return result;
     }
@@ -157,6 +161,8 @@ public class BST {
                 }
             }
         }
+
+        return result;
     }
 
     private boolean isLess(TreeNode a, TreeNode b) {

@@ -2,4 +2,7 @@
 */*.class
 */*/*.class
 .vscode
+.metadata/
+RemoteSystemsTempFiles/
+.recommenders/
 
