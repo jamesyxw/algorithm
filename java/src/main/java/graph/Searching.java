@@ -25,8 +25,28 @@ public class Searching {
 
         return result;
     }
-
+    
     public static List<Node> DFS (Node root) {
+    	if (root == null) {
+    		return new ArrayList<Node>();
+    	}
+    	
+    	List<Node> result = new ArrayList<Node>();
+    	Stack<Node> stack = new Stack<Node>();
+    	stack.push(root);
+    	
+    	while(!stack.isEmpty()) {
+    		Node curNode = stack.pop();
+    		result.add(curNode);
+    		for (Node neighbor : curNode.neighbors) {
+    			stack.push(neighbor);
+    		}
+    	}
+    	
+    	return result;
+    }
+
+    public static List<Node> DFSRecur (Node root) {
         if (root == null) {
             return new ArrayList<Node>();
         }
