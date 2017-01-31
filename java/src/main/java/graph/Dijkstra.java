@@ -5,6 +5,12 @@ import java.util.TreeSet;
 
 public class Dijkstra {
 	
+	/**
+	 * The implementation of the Dijkstra's algorithm is based on the Wikipedia's implementation
+	 * @param graph
+	 * @param start
+	 * @throws Exception
+	 */
 	public static void dijkstra(Graph graph, String start) throws Exception {
 		if (graph == null || start == null) {
 			return;
@@ -14,10 +20,10 @@ public class Dijkstra {
 			throw new Exception("Unknown Vertex");
 		}
 		
-		NavigableSet<Vertex> q = new TreeSet<Vertex>();
-		final Vertex source = graph.getVertex(start);
-		
 		//Create a TreeSet for all the vertex to achieve O(log|V|) runtime on remove and add
+		NavigableSet<Vertex> q = new TreeSet<Vertex>();
+		Vertex source = graph.getVertex(start);
+		
 		for (Vertex v : graph.getAllVertexes()) {
 			v.dist = Integer.MAX_VALUE;
 			v.prev = null;
