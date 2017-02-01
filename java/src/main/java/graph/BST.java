@@ -13,9 +13,9 @@ public class BST {
         if (value == null) {
             return;
         }
-        
+
         TreeNode newNode = new TreeNode(value);
-        
+
         if (root == null) {
             root = newNode;
             return;
@@ -100,7 +100,7 @@ public class BST {
 
     /**
      * left -> root -> right
-     * 
+     *
     **/
     public List<TreeNode> inOrderTraverse () {
         if (root == null) {
@@ -118,7 +118,7 @@ public class BST {
                 stack.push(curNode);
                 curNode = curNode.left;
             } else {
-            	//Finally curNode hit the leaf node
+                //Finally curNode hit the leaf node
                 //So pop the last node in the stack and add to the List
                 //Go the right node of the last popped node
                 curNode = stack.pop();
@@ -131,7 +131,7 @@ public class BST {
 
     /**
      * left -> right -> root
-     * 
+     *
     **/
     public List<TreeNode> postOrderTraverse () {
         if (root == null) {
@@ -151,7 +151,7 @@ public class BST {
             } else {
                 //Node curNode hit the leaf, now go back the previous node and go to its right node
                 TreeNode peekedNode = stack.peek();
-                
+
                 //Make sure don't go back to the one that has been popped
                 if (peekedNode.right != null && peekedNode.right != lastPoppedNode) {
                     curNode = peekedNode.right;

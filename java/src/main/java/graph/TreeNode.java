@@ -1,7 +1,7 @@
 package graph;
 
 public class TreeNode {
-	public TreeNode left;
+    public TreeNode left;
     public TreeNode right;
     public Comparable value;
 
@@ -20,9 +20,9 @@ public class TreeNode {
     public boolean isLeaf() {
         return left == null && right == null;
     }
-    
+
     public Comparable getValue() {
-    	return this.value;
+        return this.value;
     }
 
 }
