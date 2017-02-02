@@ -1,4 +1,5 @@
 # Algorithms
+
 ## Graph
 * [BST](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/graph/BST.java)
 * [DFS](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/graph/Searching.java)
@@ -8,6 +9,7 @@
 * [Trie](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/graph/Trie.java)
 * [Disjoint Set](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/graph/DisjointSet.java)
 * [Segment Tree](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/graph/SegmentTree.java)
+
 ## Sorting
 * [Bubble Sort](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/sorting/BubbleSort.java)
 * [Heap Sort](https://github.com/jamesyxw/algorithm/blob/master/java/src/main/java/sorting/HeapSort.java)
