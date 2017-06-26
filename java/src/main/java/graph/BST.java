@@ -65,10 +65,6 @@ public class BST {
             }
         }
 
-        if (currentNode == null) {
-            return null;
-        }
-
         return currentNode;
     }
 

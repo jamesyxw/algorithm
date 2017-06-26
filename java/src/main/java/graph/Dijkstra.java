@@ -23,14 +23,13 @@ public class Dijkstra {
         //Create a TreeSet for all the vertex to achieve O(log|V|) runtime on remove and add
         NavigableSet<Vertex> q = new TreeSet<Vertex>();
         Vertex source = graph.getVertex(start);
-
+        source.dist = 0;
+        
         for (Vertex v : graph.getAllVertexes()) {
             v.dist = Integer.MAX_VALUE;
             v.prev = null;
             q.add(v);
         }
-
-        source.dist = 0;
 
         while (!q.isEmpty()) {
             //Get the vertex with the shortest dist (to source)
