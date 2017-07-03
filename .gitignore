@@ -1,8 +1,10 @@
-!*.javac
 */*.class
 */*/*.class
 .vscode
 .metadata/
 RemoteSystemsTempFiles/
 .recommenders/
+*/.classpath
+java/.classpath
+*.class
 

@@ -19,5 +19,9 @@ public class Vertex implements Comparable<Vertex>{
         }
         return this.dist.compareTo(o.dist);
     }
+    
+    public Integer distTo(Vertex dest) {
+        return this.neighbors.get(dest);
+    }
 
 }

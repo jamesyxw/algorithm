@@ -149,6 +149,8 @@ public class BST {
                 TreeNode peekedNode = stack.peek();
 
                 //Make sure don't go back to the one that has been popped
+                //if right is popped, then it means left should also have been popped,
+                //then it would be the curNode's turn to be popped. 
                 if (peekedNode.right != null && peekedNode.right != lastPoppedNode) {
                     curNode = peekedNode.right;
                 } else {

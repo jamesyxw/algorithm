@@ -36,7 +36,13 @@ public class Dijkstra {
             Vertex u = q.pollFirst();
 
             for (Vertex neighbor : u.neighbors.keySet()) {
-                Integer alt = u.dist + graph.getDist(u.key, neighbor.key);
+                Integer alt;
+                if (u.distTo(neighbor) == null) {
+                    alt = Integer.MAX_VALUE;
+                } else {
+                    alt = u.dist + u.distTo(neighbor);
+                }
+                 
                 if (alt.compareTo(neighbor.dist) < 0) {
                     neighbor.dist = alt;
                     neighbor.prev = u;
@@ -44,5 +50,4 @@ public class Dijkstra {
             }
         }
     }
-
 }
