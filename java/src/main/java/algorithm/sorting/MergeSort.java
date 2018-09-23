@@ -1,7 +1,5 @@
 package algorithm.sorting;
 
-import java.util.*;
-
 public class MergeSort
 {
     public static void sort(Comparable [ ] a)
@@ -23,6 +21,8 @@ public class MergeSort
 
     private static void merge(Comparable[ ] a, Comparable[ ] tmp, int left, int right, int rightEnd )
     {
+        //merge from a to temp such that comparing a[left] to a[right], whoever smaller is copy to temp at k
+        //increment left or right and k;
         int leftEnd = right - 1;
         int k = left;
         int num = rightEnd - left + 1;
