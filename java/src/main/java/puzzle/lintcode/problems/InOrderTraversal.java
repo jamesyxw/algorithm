@@ -27,14 +27,15 @@ public class InOrderTraversal {
         TreeNode curNode = root;
         
         while(!stack.isEmpty() || curNode != null) {
-        	if (curNode != null) {
-        		stack.push(curNode);
-        		curNode = curNode.left;
-        	} else {
-        		curNode = stack.pop();
-        		result.add(curNode.val);
-        		curNode = curNode.right;
-        	}
+        	
+            if (curNode != null) {
+                stack.push(curNode);
+                curNode = curNode.left;
+            } else {
+                curNode = stack.pop();
+                result.add(curNode.val);
+                curNode = curNode.right;
+            }
         }
         
         return result;

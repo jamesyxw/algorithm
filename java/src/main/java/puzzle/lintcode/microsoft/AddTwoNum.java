@@ -21,6 +21,8 @@ import puzzle.lintcode.common.ListNode;
 public class AddTwoNum {
 	
 	public static void main(String[] args) {
+	    AddTwoNum solution = new AddTwoNum();
+	    
 //		ListNode l1 = LinkedListUtils.buildList(0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 //		ListNode l2 = LinkedListUtils.buildList(0, 9, 8, 7, 6, 5, 4, 3, 2, 1);
 //		LinkedListUtils.displayLinkedList(l1);
@@ -47,7 +49,7 @@ public class AddTwoNum {
 		LinkedListUtils.displayLinkedList(l5);
 		LinkedListUtils.displayLinkedList(l6);
 		
-		ListNode sum3 = addLists(l5, l6);
+		ListNode sum3 = solution.addLists(l5, l6);
 		System.out.println();
 		LinkedListUtils.displayLinkedList(sum3);
 	}
@@ -58,7 +60,7 @@ public class AddTwoNum {
      * @param l2: the second list
      * @return: the sum list of l1 and l2 
      */
-    public static ListNode addLists(ListNode l1, ListNode l2) {
+    public ListNode addLists(ListNode l1, ListNode l2) {
         ListNode result = null;
         
         if (l1 == null && l2 == null) {
