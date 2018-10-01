@@ -2,10 +2,10 @@ package puzzle.lintcode.common;
 
 import java.util.List;
 
-public class ListUtils {
+public class ListUtils<T> {
     
-    public static void displayListList(List<List<Integer>> list) {
-        for (List<Integer> tuple : list) {
+    public void displayListList(List<List<T>> list) {
+        for (List<T> tuple : list) {
             System.out.print("{");
             for (int i = 0; i < tuple.size(); i++) {
                 System.out.print(tuple.get(i));
@@ -15,5 +15,12 @@ public class ListUtils {
             }
             System.out.println("}");
         }
+    }
+    
+    public void displayList(List<T> list) {
+        for(T num : list) {
+            System.out.print(num + ",");
+        }
+        System.out.println("");
     }
 }

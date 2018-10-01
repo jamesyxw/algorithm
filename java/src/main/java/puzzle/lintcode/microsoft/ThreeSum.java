@@ -23,6 +23,7 @@ import puzzle.lintcode.common.ListUtils;
 public class ThreeSum {
     
     public static void main(String[] args) {
+        ListUtils<Integer> utils = new ListUtils<Integer>();
         int[][] inputs = {
 //                {-1, 0, 1, 2, -1, -4},
 //                {1,0,-1,-1,-1,-1,0,1,1,1},
@@ -32,7 +33,7 @@ public class ThreeSum {
         for (int i = 0; i < inputs.length; i++) {
             ArrayUtils.display(inputs[i]);
             List<List<Integer>> result = threeSum(inputs[i]);
-            ListUtils.displayListList(result);
+            utils.displayListList(result);
         }
     }
     
