@@ -39,7 +39,5 @@ public class Test {
             assert(postOrder.get(i).value.equals(postOrderAnswer[i]));
         }
 
-        assert false;
-
     }
 }

@@ -7,4 +7,6 @@ RemoteSystemsTempFiles/
 */.classpath
 java/.classpath
 *.class
+java/.project
+java/.settings/
 

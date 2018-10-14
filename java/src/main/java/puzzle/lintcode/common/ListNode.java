@@ -1,9 +1,9 @@
 package puzzle.lintcode.common;
 
-public class ListNode {
-	public int val;
-	public ListNode next;
-	public ListNode(int val) {
+public class ListNode<T> {
+	public T val;
+	public ListNode<T> next;
+	public ListNode(T val) {
 		this.val = val;
 		this.next = null;
 	}
