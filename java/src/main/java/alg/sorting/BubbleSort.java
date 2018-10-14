@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package alg.sorting;
 
 public class BubbleSort {
     public static void sort (Comparable[] a) {

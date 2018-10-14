@@ -7,8 +7,8 @@ import java.util.List;
 
 import org.junit.Test;
 
-import datastructure.graph.BST;
-import datastructure.graph.TreeNode;
+import ds.graph.BST;
+import ds.graph.TreeNode;
 
 public class BSTTest {
 

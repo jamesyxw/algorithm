@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package alg.sorting;
 
 import java.util.*;
 

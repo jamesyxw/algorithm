@@ -1,4 +1,4 @@
-package datastructure.permutation;
+package alg.permcomb;
 
 import java.util.ArrayList;
 import java.util.List;

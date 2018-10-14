@@ -1,4 +1,4 @@
-package datastructure.graph;
+package ds.graph;
 
 public class SegmentNode extends TreeNode {
     int start;

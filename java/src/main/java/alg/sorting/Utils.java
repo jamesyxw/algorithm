@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package alg.sorting;
 
 public class Utils {
     public static void swap (Comparable[] a, int i, int j) {

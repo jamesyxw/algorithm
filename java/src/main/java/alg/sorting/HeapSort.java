@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package alg.sorting;
 
 public class HeapSort {
     public static void sort(Comparable[] a) {

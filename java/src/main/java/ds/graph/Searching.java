@@ -1,4 +1,4 @@
-package datastructure.graph;
+package ds.graph;
 
 import java.util.*;
 

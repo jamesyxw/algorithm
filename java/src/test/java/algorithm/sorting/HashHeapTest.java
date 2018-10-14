@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.junit.Test;
 
+import alg.sorting.HashHeap;
+
 public class HashHeapTest {
 
     @Test

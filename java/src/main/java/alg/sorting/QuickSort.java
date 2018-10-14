@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package alg.sorting;
 
 public class QuickSort {
     public static void sort(Comparable[] a){
