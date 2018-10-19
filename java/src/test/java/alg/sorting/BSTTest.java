@@ -1,4 +1,4 @@
-package datastructure.graph;
+package alg.sorting;
 
 
 import static org.junit.Assert.*;

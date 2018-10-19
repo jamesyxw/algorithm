@@ -1,4 +1,4 @@
-package algorithm.sorting;
+package ds.graph;
 
 
 import static org.junit.Assert.*;

@@ -1,4 +1,4 @@
-package datastructure.graph;
+package ds.graph;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
